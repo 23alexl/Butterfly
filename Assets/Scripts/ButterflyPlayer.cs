@@ -10,14 +10,17 @@ public class ButterflyPlayer : MonoBehaviour
     [SerializeField] float rotateSpeed;
     [SerializeField] ParticleSystem dustFX;
     [SerializeField] GameObject explodeFX;
+    [SerializeField] AudioClip BonkSound;
     bool isAlive = true;
     int currentLevel;
+    AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody>();
         currentLevel = SceneManager.GetActiveScene().buildIndex;
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,10 +39,10 @@ public class ButterflyPlayer : MonoBehaviour
         if (collision.gameObject.tag == "bad") ;
         {
             Instantiate(explodeFX, transform.position, transform.rotation);
-            
+            audio.PlayOneShot(BonkSound);
+
             isAlive = false;
             
-
             Invoke("ResetScene", 2f);
         }
         if (collision.gameObject.tag == "win")
