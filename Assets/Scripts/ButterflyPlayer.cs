@@ -12,7 +12,7 @@ public class ButterflyPlayer : MonoBehaviour
     [SerializeField] GameObject explodeFX;
     [SerializeField] AudioClip BonkSound;
     bool isAlive = true;
-    int currentLevel;
+    int currentLevel = SceneManager.GetActiveScene().buildIndex;
     AudioSource audio;
 
     // Start is called before the first frame update
@@ -47,9 +47,8 @@ public class ButterflyPlayer : MonoBehaviour
         }
         if (collision.gameObject.tag == "win")
         {
-            SceneManager.LoadScene(currentLevel * 1);
+            SceneManager.LoadScene(currentLevel + 1);
         }
-
     }
 
     void fly()
