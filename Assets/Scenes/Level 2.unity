@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310209328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.58, y: 6.07, z: -2.96}
+  m_LocalPosition: {x: -21.34, y: 6.07, z: -2.96}
   m_LocalScale: {x: 0.7, y: 1.2, z: 0.7}
   m_Children:
   - {fileID: 336896893}
@@ -375,7 +375,7 @@ MonoBehaviour:
   rotateSpeed: 1
   dustFX: {fileID: 1038810693}
   explodeFX: {fileID: 8871296533588514271, guid: cc26aac195f39d6409ee13d6f6c1bc46, type: 3}
-  BonkSound: {fileID: 8300000, guid: 7cd4986b0d08dee45aa9849734bbd755, type: 3}
+  BonkSound: {fileID: 8300000, guid: 479f8ba07629f49428b17c8a7509d420, type: 3}
 --- !u!82 &310209332
 AudioSource:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 323651457}
   m_Layer: 0
   m_Name: Starting Pad
-  m_TagString: Untagged
+  m_TagString: friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,7 +561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323651456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.37, y: -0.18, z: -2.59}
+  m_LocalPosition: {x: -21.64, y: -0.18, z: -2.59}
   m_LocalScale: {x: 2, y: 1, z: 3}
   m_Children:
   - {fileID: 489461999}
@@ -1652,7 +1652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.067928255, y: 0, z: 0, w: 0.99769026}
-  m_LocalPosition: {x: 5.02, y: 8.09, z: -16.97}
+  m_LocalPosition: {x: 2.36, y: 9.95, z: -16.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7744,8 +7744,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061454426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.17, y: 6.52, z: 0.46}
-  m_LocalScale: {x: 1, y: 23.76, z: 15}
+  m_LocalPosition: {x: 29.17, y: 7.3, z: 0.46}
+  m_LocalScale: {x: 1, y: 22.573425, z: 15}
   m_Children:
   - {fileID: 778357030}
   m_Father: {fileID: 328250284}
